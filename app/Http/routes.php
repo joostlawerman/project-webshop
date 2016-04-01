@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+
 $router->get("/", "HomeController@index");
 
 /////////////////
@@ -15,6 +17,7 @@ $router->get("/api/users", "UsersController@index");
 $router->post("/api/users", "UsersController@create");
 
 $router->get("/api/users/{id}", "UsersController@show");
+$router->patch("/api/users/{id}", "UsersController@update");
 
 ////////////////////
 // Product Routes //

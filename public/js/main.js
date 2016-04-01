@@ -22,12 +22,12 @@ exports.default = {
 	}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<nav _v-96df9b2e=\"\">\n    <div class=\"nav-wrapper\" _v-96df9b2e=\"\">\n      \t<a v-link=\"{ path: '/' }\" class=\"brand-logo\" _v-96df9b2e=\"\">PC4U</a>\n      \t<a data-activates=\"mobile-demo\" class=\"button-collapse\" _v-96df9b2e=\"\">\n      \t\t<i class=\"material-icons\" _v-96df9b2e=\"\">menu</i>\n      \t</a>\n\t\t<ul class=\"right hide-on-small-and-down\" _v-96df9b2e=\"\">\n\t\t\t<li v-show=\"!loggedin\" _v-96df9b2e=\"\">\n\t\t\t\t<a v-link=\"{ path: '/login' }\" _v-96df9b2e=\"\">Login</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"!loggedin\" _v-96df9b2e=\"\">\n\t\t\t\t<a v-link=\"{ path: '/register' }\" _v-96df9b2e=\"\">Register</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"loggedin\" _v-96df9b2e=\"\">\n\t\t\t\t<a v-link=\"{ path: '/profile/0' }\" _v-96df9b2e=\"\">Profile</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"loggedin\" _v-96df9b2e=\"\">\n\t\t\t\t<a @click=\"logout\" _v-96df9b2e=\"\">Logout</a>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n</nav>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<nav _v-214f152b=\"\">\n    <div class=\"nav-wrapper\" _v-214f152b=\"\">\n      \t<a v-link=\"{ path: '/' }\" class=\"brand-logo\" _v-214f152b=\"\">PC4U</a>\n      \t<a data-activates=\"mobile-demo\" class=\"button-collapse\" _v-214f152b=\"\">\n      \t\t<i class=\"material-icons\" _v-214f152b=\"\">menu</i>\n      \t</a>\n\t\t<ul class=\"right hide-on-small-and-down\" _v-214f152b=\"\">\n\t\t\t<li v-show=\"!loggedin\" _v-214f152b=\"\">\n\t\t\t\t<a v-link=\"{ path: '/login' }\" _v-214f152b=\"\">Login</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"!loggedin\" _v-214f152b=\"\">\n\t\t\t\t<a v-link=\"{ path: '/register' }\" _v-214f152b=\"\">Register</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"loggedin\" _v-214f152b=\"\">\n\t\t\t\t<a v-link=\"{ path: '/profile/0' }\" _v-214f152b=\"\">Profile</a>\n\t\t\t</li>\n\t\t\t<li v-show=\"loggedin\" _v-214f152b=\"\">\n\t\t\t\t<a @click=\"logout\" _v-214f152b=\"\">Logout</a>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n</nav>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Components/navBar.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Components/navBar.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -70,12 +70,12 @@ exports.default = {
     }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"col s12 m6 l4\" _v-0294e876=\"\">\n    <div class=\"card\" _v-0294e876=\"\">    \n        <div class=\"card-image waves-effect waves-block waves-light\" _v-0294e876=\"\">\n            <img class=\"activator\" v-on:click=\"loadInfo\" src=\"http://materializecss.com/images/sample-1.jpg\" _v-0294e876=\"\">\n            <span class=\"card-title\" _v-0294e876=\"\">\n                {{ name }}\n            </span>\n        </div>\n        <div class=\"card-action\" _v-0294e876=\"\">\n            <a class=\"activator\" v-on:click=\"loadInfo\" _v-0294e876=\"\">More info</a>\n        </div>\n        <div class=\"card-reveal\" _v-0294e876=\"\">\n            <span class=\"card-title grey-text text-darken-4\" _v-0294e876=\"\">\n                {{ name }}<i class=\"material-icons right\" _v-0294e876=\"\">close</i>\n            </span>\n            <p _v-0294e876=\"\">\n                {{ data.info }}\n            </p>\n            <div class=\"card-action\" _v-0294e876=\"\">\n                <a v-bind:v-link=\"makeVLink()\" _v-0294e876=\"\">{{ data.price }}</a>\n            </div>\n        </div>\n    </div>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"col s12 m6 l4\" _v-62412218=\"\">\n    <div class=\"card\" _v-62412218=\"\">    \n        <div class=\"card-image waves-effect waves-block waves-light\" _v-62412218=\"\">\n            <img class=\"activator\" v-on:click=\"loadInfo\" src=\"http://materializecss.com/images/sample-1.jpg\" _v-62412218=\"\">\n            <span class=\"card-title\" _v-62412218=\"\">\n                {{ name }}\n            </span>\n        </div>\n        <div class=\"card-action\" _v-62412218=\"\">\n            <a class=\"activator\" v-on:click=\"loadInfo\" _v-62412218=\"\">More info</a>\n        </div>\n        <div class=\"card-reveal\" _v-62412218=\"\">\n            <span class=\"card-title grey-text text-darken-4\" _v-62412218=\"\">\n                {{ name }}<i class=\"material-icons right\" _v-62412218=\"\">close</i>\n            </span>\n            <p _v-62412218=\"\">\n                {{ data.info }}\n            </p>\n            <div class=\"card-action\" _v-62412218=\"\">\n                <a v-bind:v-link=\"makeVLink()\" _v-62412218=\"\">{{ data.price }}</a>\n            </div>\n        </div>\n    </div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Components/productCard.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Components/productCard.vue"
   if (!module.hot.data) {
     hotAPI.createRecord(id, module.exports)
   } else {
@@ -109,12 +109,12 @@ exports.default = {
 	}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-1dd81b5d=\"\">\n\t<nav-bar _v-1dd81b5d=\"\"></nav-bar>\n\t<main class=\"container\" _v-1dd81b5d=\"\">\t\n\t\t<div class=\"login\" _v-1dd81b5d=\"\">\n\t\t\t<h1 _v-1dd81b5d=\"\">Login</h1>\n\t\t\t<div class=\"row\" _v-1dd81b5d=\"\">\n\t            <div class=\"input-field col s12\" _v-1dd81b5d=\"\">\n\t                <input id=\"userID\" type=\"text\" class=\"validate\" name=\"login\" v-model=\"input.email\" _v-1dd81b5d=\"\">\n\n\t                <label for=\"userID\" _v-1dd81b5d=\"\">\n\t                \tEmail\n\t                </label>\n\t                <i class=\"large perm_identity\" _v-1dd81b5d=\"\"></i>\n\t            </div>\n\t            <div class=\"input-field col s12\" _v-1dd81b5d=\"\">\n\t                <input id=\"wachtwoord\" type=\"password\" class=\"validate\" name=\"password\" v-model=\"input.password\" @enter=\"send\" _v-1dd81b5d=\"\">\n\n\t                <label for=\"wachtwoord\" _v-1dd81b5d=\"\">\n\t                \tPassword\n\t                </label>\n\t            </div>\n\t        </div>\n\t        <div _v-1dd81b5d=\"\">\n\t            <button class=\"btn waves-effect waves-light\" type=\"submit\" style=\"float:right;\" @click=\"send\" _v-1dd81b5d=\"\">\n\n\t                Login\n\t              \t<i class=\"material-icons right\" _v-1dd81b5d=\"\"></i>\n\t            </button>\n\t            <p style=\"margin-top: inherit;\" _v-1dd81b5d=\"\">\n\t\t\t    \t<input type=\"checkbox\" id=\"CheckBox\" _v-1dd81b5d=\"\">\n\t\t\t        \n\t\t\t        <label for=\"CheckBox\" _v-1dd81b5d=\"\">\n\t\t\t        \tRemember me\n\t\t\t        </label>\n\t            </p>\n\t        </div>\t\t\n\t\t\t<div class=\"login-help\" _v-1dd81b5d=\"\">\n\t\t\t\t<p _v-1dd81b5d=\"\">\n\t\t\t\t\tForgot your password? \n\t\t\t\t\t<a v-link=\"{ path:'/password' }\" _v-1dd81b5d=\"\">\n\t\t\t\t\t\tklick here.\n\t\t\t\t\t</a>\n\t\t\t\t</p>\n\t\t\t\t<p _v-1dd81b5d=\"\">\n\t\t\t\t\tNo account? \n\t\t\t\t\t<a v-link=\"{ path:'/register' }\" _v-1dd81b5d=\"\">\n\t\t\t\t\t\tRegister!\n\t\t\t\t\t</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</main>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-7c30d85b=\"\">\n\t<nav-bar _v-7c30d85b=\"\"></nav-bar>\n\t<main class=\"container\" _v-7c30d85b=\"\">\t\n\t\t<div class=\"login\" _v-7c30d85b=\"\">\n\t\t\t<h1 _v-7c30d85b=\"\">Login</h1>\n\t\t\t<div class=\"row\" _v-7c30d85b=\"\">\n\t            <div class=\"input-field col s12\" _v-7c30d85b=\"\">\n\t                <input id=\"userID\" type=\"text\" class=\"validate\" name=\"login\" v-model=\"input.email\" _v-7c30d85b=\"\">\n\n\t                <label for=\"userID\" _v-7c30d85b=\"\">\n\t                \tEmail\n\t                </label>\n\t                <i class=\"large perm_identity\" _v-7c30d85b=\"\"></i>\n\t            </div>\n\t            <div class=\"input-field col s12\" _v-7c30d85b=\"\">\n\t                <input id=\"wachtwoord\" type=\"password\" class=\"validate\" name=\"password\" v-model=\"input.password\" @enter=\"send\" _v-7c30d85b=\"\">\n\n\t                <label for=\"wachtwoord\" _v-7c30d85b=\"\">\n\t                \tPassword\n\t                </label>\n\t            </div>\n\t        </div>\n\t        <div _v-7c30d85b=\"\">\n\t            <button class=\"btn waves-effect waves-light\" type=\"submit\" style=\"float:right;\" @click=\"send\" _v-7c30d85b=\"\">\n\n\t                Login\n\t              \t<i class=\"material-icons right\" _v-7c30d85b=\"\"></i>\n\t            </button>\n\t            <p style=\"margin-top: inherit;\" _v-7c30d85b=\"\">\n\t\t\t    \t<input type=\"checkbox\" id=\"CheckBox\" _v-7c30d85b=\"\">\n\t\t\t        \n\t\t\t        <label for=\"CheckBox\" _v-7c30d85b=\"\">\n\t\t\t        \tRemember me\n\t\t\t        </label>\n\t            </p>\n\t        </div>\t\t\n\t\t\t<div class=\"login-help\" _v-7c30d85b=\"\">\n\t\t\t\t<p _v-7c30d85b=\"\">\n\t\t\t\t\tForgot your password? \n\t\t\t\t\t<a v-link=\"{ path:'/password' }\" _v-7c30d85b=\"\">\n\t\t\t\t\t\tklick here.\n\t\t\t\t\t</a>\n\t\t\t\t</p>\n\t\t\t\t<p _v-7c30d85b=\"\">\n\t\t\t\t\tNo account? \n\t\t\t\t\t<a v-link=\"{ path:'/register' }\" _v-7c30d85b=\"\">\n\t\t\t\t\t\tRegister!\n\t\t\t\t\t</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t</div>\n\t</main>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/Auth/login.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/Auth/login.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -159,12 +159,12 @@ exports.default = {
     }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-842d3742=\"\">\n    <nav-bar _v-842d3742=\"\"></nav-bar>\n    <main class=\"container\" _v-842d3742=\"\">\n         <div class=\"login\" _v-842d3742=\"\">\n            <h1 _v-842d3742=\"\">Registreer</h1>\n            <div class=\"row\" _v-842d3742=\"\">\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"voornaam\" type=\"text\" class=\"validate\" v-model=\"input.firstname\" _v-842d3742=\"\">\n                    <label for=\"voornaam\" _v-842d3742=\"\">Voornaam</label>\n                </div>\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"achternaam\" type=\"text\" class=\"validate\" v-model=\"input.secondname\" _v-842d3742=\"\">\n                    <label for=\"achternaam\" _v-842d3742=\"\">Achternaam</label>\n                </div>\n                <div class=\"input-field col s12\" _v-842d3742=\"\">\n                    <input id=\"email\" type=\"email\" class=\"validate\" v-model=\"input.email\" _v-842d3742=\"\">\n                    <label for=\"email\" _v-842d3742=\"\">Email</label>\n                </div>\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"password\" type=\"password\" class=\"validate\" v-model=\"input.password\" _v-842d3742=\"\">\n                    <label for=\"password\" _v-842d3742=\"\">Wachtwoord</label>\n                </div>\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"passwordOpnieuw\" type=\"password\" class=\"validate\" v-model=\"input.password_confirm\" _v-842d3742=\"\">\n                    <label for=\"password\" _v-842d3742=\"\">Wachtwoord opnieuw</label>\n                </div>\n                <div class=\"input-field col s12\" _v-842d3742=\"\">\n                    <input id=\"adress\" type=\"text\" class=\"validate\" v-model=\"input.adress\" _v-842d3742=\"\">\n                    <label for=\"adress\" _v-842d3742=\"\">Adress</label>\n                </div>\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"postcode\" type=\"text\" class=\"validate\" v-model=\"input.zipcode\" _v-842d3742=\"\">\n                    <label for=\"postcode\" _v-842d3742=\"\">Postcode</label>\n                </div>\n                <div class=\"input-field col s6\" _v-842d3742=\"\">\n                    <input id=\"plaats\" type=\"text\" class=\"validate\" v-model=\"input.city\" _v-842d3742=\"\">\n                    <label for=\"plaats\" _v-842d3742=\"\">Plaats</label>\n                </div>\n            </div>\n            <button class=\"btn waves-effect waves-light submit\" type=\"submit\" name=\"verstuur\" style=\"float:right;\" @click=\"send\" _v-842d3742=\"\">Login\n                 <i class=\"material-icons right\" _v-842d3742=\"\"></i>\n            </button>\n            <p style=\"margin-top: inherit\" _v-842d3742=\"\">\n                <input type=\"checkbox\" id=\"CheckBox\" class=\"checkbox\" v-model=\"input.conditions\" _v-842d3742=\"\">\n                <label class=\"voorwaarde\" for=\"CheckBox\" _v-842d3742=\"\">Ik ga akkoord met de\n                <a style=\"color:#F4452E;\" href=\"voorwaarden.html\" _v-842d3742=\"\">voorwaarden</a></label>\n            </p>\n        </div>\n    </main>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-130ac2be=\"\">\n    <nav-bar _v-130ac2be=\"\"></nav-bar>\n    <main class=\"container\" _v-130ac2be=\"\">\n         <div class=\"login\" _v-130ac2be=\"\">\n            <h1 _v-130ac2be=\"\">Registreer</h1>\n            <div class=\"row\" _v-130ac2be=\"\">\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"voornaam\" type=\"text\" class=\"validate\" v-model=\"input.firstname\" _v-130ac2be=\"\">\n                    <label for=\"voornaam\" _v-130ac2be=\"\">Voornaam</label>\n                </div>\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"achternaam\" type=\"text\" class=\"validate\" v-model=\"input.secondname\" _v-130ac2be=\"\">\n                    <label for=\"achternaam\" _v-130ac2be=\"\">Achternaam</label>\n                </div>\n                <div class=\"input-field col s12\" _v-130ac2be=\"\">\n                    <input id=\"email\" type=\"email\" class=\"validate\" v-model=\"input.email\" _v-130ac2be=\"\">\n                    <label for=\"email\" _v-130ac2be=\"\">Email</label>\n                </div>\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"password\" type=\"password\" class=\"validate\" v-model=\"input.password\" _v-130ac2be=\"\">\n                    <label for=\"password\" _v-130ac2be=\"\">Wachtwoord</label>\n                </div>\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"passwordOpnieuw\" type=\"password\" class=\"validate\" v-model=\"input.password_confirm\" _v-130ac2be=\"\">\n                    <label for=\"password\" _v-130ac2be=\"\">Wachtwoord opnieuw</label>\n                </div>\n                <div class=\"input-field col s12\" _v-130ac2be=\"\">\n                    <input id=\"adress\" type=\"text\" class=\"validate\" v-model=\"input.adress\" _v-130ac2be=\"\">\n                    <label for=\"adress\" _v-130ac2be=\"\">Adress</label>\n                </div>\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"postcode\" type=\"text\" class=\"validate\" v-model=\"input.zipcode\" _v-130ac2be=\"\">\n                    <label for=\"postcode\" _v-130ac2be=\"\">Postcode</label>\n                </div>\n                <div class=\"input-field col s6\" _v-130ac2be=\"\">\n                    <input id=\"plaats\" type=\"text\" class=\"validate\" v-model=\"input.city\" _v-130ac2be=\"\">\n                    <label for=\"plaats\" _v-130ac2be=\"\">Plaats</label>\n                </div>\n            </div>\n            <button class=\"btn waves-effect waves-light submit\" type=\"submit\" name=\"verstuur\" style=\"float:right;\" @click=\"send\" _v-130ac2be=\"\">Login\n                 <i class=\"material-icons right\" _v-130ac2be=\"\"></i>\n            </button>\n            <p style=\"margin-top: inherit\" _v-130ac2be=\"\">\n                <input type=\"checkbox\" id=\"CheckBox\" class=\"checkbox\" v-model=\"input.conditions\" _v-130ac2be=\"\">\n                <label class=\"voorwaarde\" for=\"CheckBox\" _v-130ac2be=\"\">Ik ga akkoord met de\n                <a style=\"color:#F4452E;\" href=\"voorwaarden.html\" _v-130ac2be=\"\">voorwaarden</a></label>\n            </p>\n        </div>\n    </main>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/Auth/register.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/Auth/register.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -226,12 +226,12 @@ exports.default = {
 	}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-1fe97782=\"\">\n\t<nav-bar _v-1fe97782=\"\"></nav-bar>\n\t<main _v-1fe97782=\"\">\n\t\t<div class=\"row\" _v-1fe97782=\"\">\n\t\t\t<product v-for=\"product in products\" track-by=\"$index\" :product=\"product.id\" :name=\"product.name\" _v-1fe97782=\"\"></product>\n\t\t</div>\n\t\t<ul class=\"pagination\" v-if=\"filters.limit > pagination.max\" _v-1fe97782=\"\">\n\t\t    <li v-bind:class=\"left\" _v-1fe97782=\"\">\n\t\t    \t<a v-on:click=\"page(-1)\" _v-1fe97782=\"\">\n\t\t    \t\t<i class=\"material-icons\" _v-1fe97782=\"\">\n\t\t    \t\t\tchevron_left\n\t\t    \t\t</i>\n\t\t    \t</a>\n\t\t    </li>\n\t\t    <li class=\"active\" _v-1fe97782=\"\">\n\t\t    \t<a _v-1fe97782=\"\">\n\t\t    \t\t{{ pagination.active }}\n    \t\t\t</a>\n\t\t\t</li>\n\t\t    <li v-bind:class=\"right\" _v-1fe97782=\"\">\n\t\t    \t<a v-on:click=\"page(1)\" _v-1fe97782=\"\">\n\t\t    \t\t<i class=\"material-icons\" _v-1fe97782=\"\">\n\t\t    \t\t\tchevron_right\n\t    \t\t\t</i>\n    \t\t\t</a>\n\t\t\t</li>\n\t\t </ul>\n\t</main>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-0d00f500=\"\">\n\t<nav-bar _v-0d00f500=\"\"></nav-bar>\n\t<main _v-0d00f500=\"\">\n\t\t<div class=\"row\" _v-0d00f500=\"\">\n\t\t\t<product v-for=\"product in products\" track-by=\"$index\" :product=\"product.id\" :name=\"product.name\" _v-0d00f500=\"\"></product>\n\t\t</div>\n\t\t<ul class=\"pagination\" v-if=\"filters.limit > pagination.max\" _v-0d00f500=\"\">\n\t\t    <li v-bind:class=\"left\" _v-0d00f500=\"\">\n\t\t    \t<a v-on:click=\"page(-1)\" _v-0d00f500=\"\">\n\t\t    \t\t<i class=\"material-icons\" _v-0d00f500=\"\">\n\t\t    \t\t\tchevron_left\n\t\t    \t\t</i>\n\t\t    \t</a>\n\t\t    </li>\n\t\t    <li class=\"active\" _v-0d00f500=\"\">\n\t\t    \t<a _v-0d00f500=\"\">\n\t\t    \t\t{{ pagination.active }}\n    \t\t\t</a>\n\t\t\t</li>\n\t\t    <li v-bind:class=\"right\" _v-0d00f500=\"\">\n\t\t    \t<a v-on:click=\"page(1)\" _v-0d00f500=\"\">\n\t\t    \t\t<i class=\"material-icons\" _v-0d00f500=\"\">\n\t\t    \t\t\tchevron_right\n\t    \t\t\t</i>\n    \t\t\t</a>\n\t\t\t</li>\n\t\t </ul>\n\t</main>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/Products/index.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/Products/index.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -260,12 +260,12 @@ exports.default = {
 	methods: {}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-7ab56efd=\"\">\n\t\t\t\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-9972ad82=\"\">\n\t\t\t\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/Products/show.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/Products/show.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -277,7 +277,7 @@ if (module.hot) {(function () {  module.hot.accept()
   }
 })()}
 },{"vue":39,"vue-hot-reload-api":13,"vueify-insert-css":40}],7:[function(require,module,exports){
-var __vueify_style__ = require("vueify-insert-css").insert("\n\n")
+var __vueify_style__ = require("vueify-insert-css").insert("/* line 2, stdin */\ninput.clean[_v-105f45bd] {\n  height: auto;\n  width: auto;\n  border-bottom: none;\n  margin: 0; }\n  /* line 7, stdin */\n  input.clean[_v-105f45bd]:focus {\n    border-bottom: none;\n    box-shadow: none; }\n")
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -295,26 +295,40 @@ exports.default = {
 
 	methods: {
 		get: function get() {
-			var __self = this,
-			    id = this.$route.params.id;
+			var _this = this;
+
+			var id = this.$route.params.id;
 
 			this.$http.get('/api/users/' + id).then(function (response) {
-				__self.user = response.data;
+				_this.user = response.data;
 				console.log(response);
 				return;
+			});
+		},
+		update: function update() {
+			var _this2 = this;
+
+			var id = this.$route.params.id;
+
+			this.$http.patch('/api/users/' + id, this.user).then(function (response) {
+				console.log(response);
+				_this2.$snackbar.create("Profile Updated");
+				return;
+			}, function (errors) {
+				console.log(errors);
 			});
 		}
 	}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-9bf2ee82=\"\">\n\t<nav-bar _v-9bf2ee82=\"\"></nav-bar>\n\t<main class=\"container\" _v-9bf2ee82=\"\">\t\n\t\t<div class=\"row\" _v-9bf2ee82=\"\">\n\t\t\t<div class=\"card s12 m6\" _v-9bf2ee82=\"\">\n\t\t\t\t<div class=\"card-content\" _v-9bf2ee82=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-9bf2ee82=\"\">\n\t\t\t\t\t\tPersonal details\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-9bf2ee82=\"\">\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tFirstname: {{user.firstname}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tSecondname: {{user.secondname}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card s12 m6\" _v-9bf2ee82=\"\">\n\t\t\t\t<div class=\"card-content\" _v-9bf2ee82=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-9bf2ee82=\"\">\n\t\t\t\t\t\tDelivery information\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-9bf2ee82=\"\">\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tAdress: {{user.adress}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tZipcode: {{user.zipcode}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tCity: {{user.city}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card s12 m6\" _v-9bf2ee82=\"\">\n\t\t\t\t<div class=\"card-content\" _v-9bf2ee82=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-9bf2ee82=\"\">\n\t\t\t\t\t\tAccount details\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-9bf2ee82=\"\">\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tEmail: {{user.email}}\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-9bf2ee82=\"\">\n\t\t\t\t\t\t\tPassword: <a _v-9bf2ee82=\"\">Change</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</main>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-105f45bd=\"\">\n\t<nav-bar _v-105f45bd=\"\"></nav-bar>\n\t<main class=\"container\" _v-105f45bd=\"\">\t\n\t\t<div class=\"row\" _v-105f45bd=\"\">\n\t\t\t<div class=\"card s12 m6\" _v-105f45bd=\"\">\n\t\t\t\t<div class=\"card-content\" _v-105f45bd=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-105f45bd=\"\">\n\t\t\t\t\t\tPersonal details\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-105f45bd=\"\">\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tFirstname: <input class=\"clean\" v-model=\"user.firstname\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tSecondname: <input class=\"clean\" v-model=\"user.secondname\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-action\" _v-105f45bd=\"\">\n\t\t\t\t\t<a @click=\"update\" _v-105f45bd=\"\">Update</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card s12 m6\" _v-105f45bd=\"\">\n\t\t\t\t<div class=\"card-content\" _v-105f45bd=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-105f45bd=\"\">\n\t\t\t\t\t\tDelivery information\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-105f45bd=\"\">\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tAdress: <input class=\"clean\" v-model=\"user.adress\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tZipcode: <input class=\"clean\" v-model=\"user.zipcode\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tCity: <input class=\"clean\" v-model=\"user.city\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-action\" _v-105f45bd=\"\">\n\t\t\t\t\t<a @click=\"update\" _v-105f45bd=\"\">Update</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card s12 m6\" _v-105f45bd=\"\">\n\t\t\t\t<div class=\"card-content\" _v-105f45bd=\"\">\n\t\t\t\t\t<span class=\"card-title\" _v-105f45bd=\"\">\n\t\t\t\t\t\tAccount details\n\t\t\t\t\t</span>\n\t\t\t\t\t<ul _v-105f45bd=\"\">\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tEmail: <input class=\"clean\" v-model=\"user.email\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tPassword: <input placeholder=\"enter\" class=\"clean\" v-model=\"user.password\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li _v-105f45bd=\"\">\n\t\t\t\t\t\t\tConfirm: <input class=\"clean\" placeholder=\"enter\" v-model=\"user.password_confirm\" _v-105f45bd=\"\">\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"card-action\" _v-105f45bd=\"\">\n\t\t\t\t\t<a @click=\"update\" _v-105f45bd=\"\">Update</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</main>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/Users/show.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/Users/show.vue"
   module.hot.dispose(function () {
-    require("vueify-insert-css").cache["\n\n"] = false
+    require("vueify-insert-css").cache["/* line 2, stdin */\ninput.clean[_v-105f45bd] {\n  height: auto;\n  width: auto;\n  border-bottom: none;\n  margin: 0; }\n  /* line 7, stdin */\n  input.clean[_v-105f45bd]:focus {\n    border-bottom: none;\n    box-shadow: none; }\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
@@ -341,12 +355,12 @@ exports.default = {
 	methods: {}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-581b3aa8=\"\">\n\t<nav-bar _v-581b3aa8=\"\"></nav-bar>\n\tHellow world\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-3784f66e=\"\">\n\t<nav-bar _v-3784f66e=\"\"></nav-bar>\n\tHellow world\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/landing.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/landing.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)
@@ -375,12 +389,12 @@ exports.default = {
 	methods: {}
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-284f81aa=\"\">\n\t<h4 _v-284f81aa=\"\">Page not found</h4>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div _v-370f6628=\"\">\n\t<h4 _v-370f6628=\"\">Page not found</h4>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
-  var id = "/home/joost/Code/project/project7/assets/Pages/notFound.vue"
+  var id = "/home/joost/Code/project/project-webshop/assets/Pages/notFound.vue"
   module.hot.dispose(function () {
     require("vueify-insert-css").cache["\n\n"] = false
     document.head.removeChild(__vueify_style__)

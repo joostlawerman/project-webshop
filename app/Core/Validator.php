@@ -15,19 +15,33 @@ class Validator {
 	}
 
 	public function required($field) {
-		if ($this->values[$field] == "") {
-			$this->addError($field, "$field is required.");
+		if (isset($this->values[$field])) {
+			if ($this->values[$field] != "") {
+				return;
+			}
 		}
+		$this->addError($field, "$field is required.");
 	}
 
 	public function confirmed($field) {
-		if ($this->values[$field] !== $this->values["{$field}_confirm"]) {
-			$this->addError($field, "$field is not confirmed.");
+		if (isset($this->values["{$field}_confirm"])) {
+			if ($this->values[$field] === $this->values["{$field}_confirm"]) {
+				return;
+			}
 		}
+		$this->addError($field, "$field is not confirmed.");
 	}
 
 	public function unique($field, $option) {
 		try {
+			$except = explode(",",$option);
+			if (count($except) > 1) {
+				$option = $except[0];
+				if ($this->values[$field] == $except[1]) {
+					return;
+				}
+			}
+
 			$class = "App\Models\\".$option;
 
 			$results = $class::where($field, $this->values[$field])->get();
@@ -55,7 +69,7 @@ class Validator {
 	
 	public function exists($method) {
 		if (!method_exists($this, $method)) {
-			throw new Exception("Validator option does not exist", 1);
+			throw new Exception("$method: Validator option does not exist", 1);
 		}
 	}
 
@@ -73,13 +87,18 @@ class Validator {
 			foreach (explode("|", $rules) as $value) {
 
 				$rule = explode(":", $value);
+				$method = $rule[0];
+
+				$except = explode(",",$method);
+
+				if (count($except) > 1) {
+					$method = $except[0];
+				}
 
 				if (isset($rule[1])) {
-					$method = $rule[0];
 					$validator->exists($method);
 					$validator->$method($field, $rule[1]);
 				} else {
-					$method = $rule[0];
 					$validator->exists($method);
 					$validator->$method($field);
 				}

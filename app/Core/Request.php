@@ -18,7 +18,7 @@ class Request {
 	public function getMethod() {
 		$input = $this->all();
 		if (isset($input["method"])) {
-			return $input["method"];
+			return strtoupper($input["method"]);
 		}
 		return $_SERVER["REQUEST_METHOD"];
 	}

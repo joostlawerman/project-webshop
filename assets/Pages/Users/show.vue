@@ -1,5 +1,14 @@
-<style scoped>
-
+<style scoped lang="scss">
+	input.clean {
+		height: auto;
+		width: auto;
+		border-bottom: none;
+		margin: 0;
+		&:focus {
+			border-bottom: none;
+			box-shadow: none;
+		}
+	}
 </style>
 <template>
 	<div>
@@ -13,12 +22,15 @@
 						</span>
 						<ul>
 							<li>
-								Firstname: {{user.firstname}}
+								Firstname: <input class="clean" v-model="user.firstname">
 							</li>
 							<li>
-								Secondname: {{user.secondname}}
+								Secondname: <input class="clean" v-model="user.secondname">
 							</li>
 						</ul>
+					</div>
+					<div class="card-action">
+						<a @click="update">Update</a>
 					</div>
 				</div>
 				<div class="card s12 m6">
@@ -28,15 +40,18 @@
 						</span>
 						<ul>
 							<li>
-								Adress: {{user.adress}}
+								Adress: <input class="clean" v-model="user.adress">
 							</li>
 							<li>
-								Zipcode: {{user.zipcode}}
+								Zipcode: <input class="clean" v-model="user.zipcode">
 							</li>
 							<li>
-								City: {{user.city}}
+								City: <input class="clean" v-model="user.city">
 							</li>
 						</ul>
+					</div>
+					<div class="card-action">
+						<a @click="update">Update</a>
 					</div>
 				</div>
 				<div class="card s12 m6">
@@ -46,12 +61,18 @@
 						</span>
 						<ul>
 							<li>
-								Email: {{user.email}}
+								Email: <input class="clean" v-model="user.email">
 							</li>
 							<li>
-								Password: <a>Change</a>
+								Password: <input placeholder="enter" class="clean" v-model="user.password">
+							</li>
+							<li>
+								Confirm: <input class="clean" placeholder="enter" v-model="user.password_confirm">
 							</li>
 						</ul>
+					</div>
+					<div class="card-action">
+						<a @click="update">Update</a>
 					</div>
 				</div>
 			</div>
@@ -72,14 +93,25 @@
 		},
 		methods: {
 			get() {
-				let __self = this,
-					id = this.$route.params.id;
+				let id = this.$route.params.id;
 
-    			this.$http.get('/api/users/'+id).then(function(response){
-    				__self.user = response.data;
+    			this.$http.get('/api/users/'+id).then((response) => {
+    				this.user = response.data;
                     console.log(response);
                     return;
                 });
+			},
+			update() {
+				let id = this.$route.params.id;
+
+				this.$http.patch('/api/users/'+id, this.user).then((response) => {
+					console.log(response);
+					this.$snackbar.create("Profile Updated");
+                    return;
+                }, (errors) => {
+                	console.log(errors);
+                	
+                });	
 			}
 		}
 	}

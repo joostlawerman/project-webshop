@@ -45,7 +45,6 @@
 		</style>
 	</head>
 	<body>
-
 		<div id="app">
 			<?php $view->yieldSection("content") ?>
 			<router-view class="view" transition="turn" transition-mode="out-in"></router-view>

@@ -39,6 +39,17 @@ class Router {
 	public function post($uri, $action) {
 		$this->addRoute("POST", $uri, $action);
 	}
+	
+	/**
+	 * Add a patch route
+	 *
+	 * @param  string $uri
+	 * @param  string $action
+	 * @return void
+	 */
+	public function patch($uri, $action) {
+		$this->addRoute("PATCH", $uri, $action);
+	}	
 
 	/**
 	 * Add route to routes array
@@ -110,7 +121,7 @@ class Router {
 				// Loop trough methods
 				foreach ($value as $method => $action) {
 					// Check method
-					if ($method == $request->method) {
+					if ($method == $request->getMethod()) {
 						// Check if action is closure
 						if (is_object($action) && ($action instanceof \Closure)) {
 							$this->handleClosure($action, $uri, $request);
