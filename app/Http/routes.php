@@ -3,6 +3,9 @@
 use App\Models\User;
 
 $router->get("/", "HomeController@index");
+$router->get("/conditions", function() {
+	echo "<h1>Conditions</h1>";
+});
 
 /////////////////
 // Auth Routes //
